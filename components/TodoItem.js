@@ -1,23 +1,27 @@
-import { StyleSheet, View, text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 const TodoItem =({text}) => {
     return (
-        <View style = {StyleSheet.item}>
-            <text style = {styles.itemText}>{text}</text>
+        <View style = {styles.item}>
+            <Text style = {styles.itemText}>{text}</Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
   item: {
-    backgroundColor: '#f9c2ff',
-    padding: 15,
-    marginBottom: 10,
-    borderRadius: 5,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#ddd',
   },
   itemText: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#333',
+    fontWeight: 'bold',
   },
 });
 
