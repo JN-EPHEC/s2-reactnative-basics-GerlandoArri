@@ -8,6 +8,8 @@ interface ProfileCardProps {
   imageUrl: string;
 }
 
+//lol
+
 // The component receives 'props' as an argument.
 // We use destructuring to get the values we need directly.
 const ProfileCard: React.FC<ProfileCardProps> = ({
