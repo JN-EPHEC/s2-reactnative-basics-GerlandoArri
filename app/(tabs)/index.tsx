@@ -1,4 +1,5 @@
-import { ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import TodoItem from '../../components/TodoItem';
 
 const USERS_DATA = [
   { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com' },
@@ -7,13 +8,20 @@ const USERS_DATA = [
   { id: '4', nom: 'David Petit', email: 'david.petit@email.com' },
   { id: '5', nom: 'Émilie Rousseau', email: 'emilie.rousseau@email.com' },
 ];
-
+// ceci est ma magnifique modif//
 
 export default function HomeScreen() {
   return (
       <ScrollView>
-        { /* Render the list of users using the UserItem component */ }
-      </ScrollView>
+        <View style={styles.item}>
+    <Text style = {styles.title}> My Todo List </Text>
+     </View>
+  <TodoItem text="Learn React Native" />
+  <TodoItem text="Build a static UI" />
+  <TodoItem text="Practice with StyleSheet" />
+    <>
+</>
+    </ScrollView>
   );
 }
 
@@ -29,7 +37,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
   item: {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
@@ -47,3 +55,5 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
 });
+
+ 
