@@ -25,6 +25,8 @@ export default function HomeScreen() {
   );
 }
 
+//bon ça marche au moins 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
